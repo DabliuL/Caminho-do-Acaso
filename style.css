@@ -87,6 +87,16 @@ h1 {
     transform: translateY(-50%);
 }
 
+.center-circle:hover {
+    width: 60px;
+    height: 60px;
+}
+
+.center-circle:active {
+    width: 40px;
+    height: 40px;
+}
+
 textarea{
     background-color: rgba(20, 20, 20, 0.2);
     caret-color: #fff;
@@ -139,6 +149,10 @@ button#confirmButton {
 
 button#confirmButton:hover {
     background-color: #222242;
+}
+
+button#confirmButton:active {
+    background-color: #2d2d52;
 }
 
 canvas {
