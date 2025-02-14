@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminho do Acaso</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+    <h1>Caminho do Acaso</h1>
+        <ul class="navbar-links">
+            
+            <!--<li><a href="#" onclick="showLogin()">Login</a></li>-->
+        </ul>
+    </nav>
+
+    <div class="header">
+        <input type="text" id="customTitle" placeholder="Escreva seu título aqui..." />
+        <button id="confirmButton" onclick="confirmTitle()">Confirmar</button>
+        <h1 id="customTitleDisplay" onclick="editTitle()"></h1>
+        <p id="winner">RESULTADO</p>
+    </div>
+
+    <div class="wheel">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <div class="center-circle" onclick="spin()">
+            <div class="triangle"></div>
+        </div>
+    </div>
+
+    <div class="inputArea" onchange="createWheel()">
+        <textarea id="optionsInput" rows="10" cols="30" placeholder="Escreva as opções separadas por linhas..." oninput="limitCharsPerLine(20)"></textarea>
+    </div>
+
+    <!-- Div da janela de login (inicialmente escondida) -->
+    <div id="loginContainer" class="login-container" style="display:none;">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Nome de Usuário" required>
+            <input type="password" name="password" id="senha" placeholder="Senha" required>
+            <input type="submit" name="submit" class="inputSubmit" value="Enviar">
+            <button type="submit">Entrar</button>
+            <button type="button" onclick="hideLogin()">Fechar</button>
+            <button type="button" onclick="window.location.href='cadastro.php'">Cadastrar</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+
+</body>
+</html>

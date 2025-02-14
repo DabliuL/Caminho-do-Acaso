@@ -1,0 +1,338 @@
+body {
+    background-color: #383845;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    padding: 15px 30px;
+    font-size: 24px;
+    text-align: left; /* Alinha o h1 à esquerda */
+}
+
+.navbar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #12122b;
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: space-between; /* Espaço entre o h1 à esquerda e os itens à direita */
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end; /* Mantém os links alinhados à direita */
+}
+
+.navbar>ul>li {
+    padding-right: 30px;
+}
+
+.navbar>ul>li:last-child {
+    margin-right: 0; /* Remove margem à direita do último item */
+}
+
+.navbar a, .navbar a:focus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5px 15px 5px;
+    font-size: 18px;
+    color: #ffffff;
+    white-space: nowrap;
+    transition: 0.3s;
+    text-decoration: none;;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  background: #aaaa91;
+  color: black;
+}
+
+
+.header{
+    color: #fff;
+    margin: 0 auto;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.header h1,p{
+    text-align: center;
+}
+
+.wheel{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.center-circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+textarea{
+    background-color: rgba(20, 20, 20, 0.2);
+    caret-color: #fff;
+    resize: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.inputArea {
+    display: flex;
+    align-items: center;
+    width: 20%; /* Ajuste para o tamanho que você deseja */
+    position: absolute;
+    top: 80px; /* Posiciona abaixo da navbar (ajuste conforme necessário) */
+    right: 0; /* Posiciona no lado direito da página */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 9px;
+}
+
+#optionsInput {
+    border-radius: 9px;
+}
+
+input#customTitle {
+        display: flex;
+        align-items: center;
+        width: 20%; /* Ajuste para o tamanho que você deseja */
+        position: absolute;
+        top: 100px; /* Posiciona abaixo da navbar (ajuste conforme necessário) */
+        left: 30px; /* Posiciona no lado esquerdo da página */
+        padding: 20px; /* Espaçamento interno */
+        border-radius: 9px;
+        border:solid 1px;
+}
+
+button#confirmButton {
+        display: flex;
+        align-items: center;
+        width: 8%; /* Ajuste para o tamanho que você deseja */
+        position: absolute;
+        top: 180px; /* Posiciona abaixo da navbar (ajuste conforme necessário) */
+        left: 30px; /* Posiciona no lado esquerdo da página */
+        padding: 5px; /* Espaçamento interno */
+        border-radius: 50px;
+        text-align: center;
+        font-size: 14px;
+        transition: 1s;
+        border:solid 1px;   
+}
+
+button#confirmButton:hover {
+    background-color: #222242;
+}
+
+canvas {
+    font-size: 20px; /* Define um tamanho fixo para a fonte do texto */
+    padding: 5px; /* Adiciona espaço interno ao texto (não aplicado diretamente ao canvas, mas aqui para referência) */
+    box-sizing: border-box; /* Inclui o padding e a borda nas dimensões totais do canvas */
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right: 90px solid rgb(0, 0, 0); 
+    position: absolute;
+    top: 50%;
+    right: -447%;
+    transform: translateY(-50%);
+}
+
+
+/* Página de Login */
+
+
+.cadastro-container {
+    background-color: transparent;
+    padding: 50px;
+    margin: 30px 100px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    color: #ffffff;
+}
+.cadastro-container h2 {
+    text-transform: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.description {
+    max-width: 400px;
+    padding-top: 60px;
+    padding-right: 50px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.description h3 {
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.description p {
+    text-align: justify;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.inputSubmit {
+    width: 70%;
+    padding: 10px;
+    background-color: #541f14;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.inputSubmit:hover {
+    background-color: #020304;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#confirmButton {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #12122b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para o login */
+.login-container {
+    height: auto; /* Ajusta a altura de acordo com o conteúdo */
+    width: 25%;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 20px; /* Espaçamento interno */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige o deslocamento para centralizar completamente */
+    z-index: 10; /* Coloca a janela de login acima da roleta */
+    text-align: center; /* Garante que o texto dentro dos elementos fique centralizado */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center; /* Centraliza o título */
+}
+
+.login-container input {
+    width: 80%; /* Aumenta a largura dos inputs para ficar mais proporcional à janela */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 110%;
+    box-sizing: border-box; /* Garante que o padding não extrapole a largura */
+    text-align: center; /* Centraliza o placeholder e o texto digitado */
+}
+
+.login-container button {
+    width: 40%; /* Mantém o tamanho original */
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-size: 110%;
+    transition: 0.5s;
+    margin-top: 10px; /* Espaçamento entre os botões */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    display: block; /* Garante que o botão ocupe uma linha inteira */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+
+
+.login-container button:hover {
+    background-color: #00b327;
+}
+
+        /* Estilos para o modal */
+        .modal {
+            display: none; /* Oculto por padrão */
+            position: fixed; /* Fixo na tela */
+            z-index: 1000; /* Fica acima de outros elementos */
+            left: 0;
+            top: 0;
+            width: 100%; /* Largura total */
+            height: 100%; /* Altura total */
+            overflow: auto; /* Adiciona rolagem se necessário */
+            background-color: rgb(0,0,0); /* Fundo preto com opacidade */
+            background-color: rgba(0,0,0,0.4); /* Com opacidade */
+            padding-top: 60px; /* Espaçamento no topo */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; /* Centralizado */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%; /* Largura do modal */
+            text-align: center; /* Texto centralizado */
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
+    .acesso {
+        text-align: center;
+    }
