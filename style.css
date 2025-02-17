@@ -94,7 +94,7 @@ h1 {
         height: 25px;
     }
     button#confirmButton {
-        width: 15%;
+        width: 20px;
     }
 }
 
@@ -146,7 +146,7 @@ input#customTitle {
 button#confirmButton {
         display: flex;
         align-items: center;
-        width: 8%; /* Ajuste para o tamanho que você deseja */
+        width: 20px; /* Ajuste para o tamanho que você deseja */
         position: absolute;
         top: 180px; /* Posiciona abaixo da navbar (ajuste conforme necessário) */
         left: 30px; /* Posiciona no lado esquerdo da página */
