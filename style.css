@@ -93,6 +93,10 @@ h1 {
         width: 250px;
         height: 250px;
     }
+    .center-circle{
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .center-circle:hover {
@@ -143,7 +147,7 @@ input#customTitle {
 button#confirmButton {
         display: flex;
         align-items: center;
-        width: 80px; /* Ajuste para o tamanho que você deseja */
+        width: 75px; /* Ajuste para o tamanho que você deseja */
         position: absolute;
         top: 180px; /* Posiciona abaixo da navbar (ajuste conforme necessário) */
         left: 30px; /* Posiciona no lado esquerdo da página */
