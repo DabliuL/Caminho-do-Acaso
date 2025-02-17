@@ -97,6 +97,14 @@ h1 {
         width: 25px;
         height: 25px;
     }
+    .center-circle:hover{
+        width: 30px;
+        height: 30px;
+    }
+    .center-circle:active{
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .center-circle:hover {
