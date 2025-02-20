@@ -4,6 +4,21 @@ body {
     padding: 0;
 }
 
+/*Barra de scroll do mouse*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #12122b;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #1c1c3b;
+    border-radius: 7px;
+  }
+
+
 h1 {
     color: #fff;
     margin: 0;
